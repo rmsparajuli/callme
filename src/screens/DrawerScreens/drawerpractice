@@ -1,0 +1,177 @@
+<ImageBackground
+          source={require('../../assets/bg.jpg')}
+          style={{ borderBottomWidth: 2, borderBottomColor: '#AE1438' }}>
+          <View style={{}}>
+            <TouchableOpacity style={styles._forImage}>
+              <Image
+                source={require('../../assets/logo.png')}
+                style={{
+                  height: 100, width: 100, borderWidth: 1,
+                  borderColor: "rgba(243,246,250,0.2)",
+                  borderRadius: 100,
+
+                }}
+              />
+            </TouchableOpacity>
+          </View>
+
+          {/* For name and notification */}
+          <View style={{
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            padding: 5,
+            marginRight: 20,
+            marginLeft: 5,
+            marginTop: 5
+          }}>
+            <TouchableOpacity >
+              <Text style={{ fontSize: 20, color: '#EAF0F1' }}>
+                {this.state.name}
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity >
+              <Icon
+                name='notifications-outline'
+                size={28}
+                color="#FF3E4D"
+              />
+            </TouchableOpacity>
+          </View>
+        </ImageBackground>
+
+
+        // Form here it is for scroll view
+
+<ScrollView>
+          <View>
+            <TouchableOpacity
+              // onPress={this.props.navigation.navigate('calendar')}
+              style={styles._forButton}>
+              <Icon
+                name='calendar'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Hamro Patro
+            </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              // onPress={this.props.navigation.navigate('news')}
+              style={styles._forButton}>
+              <Icon
+                name='paper'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                News
+            </Text>
+
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              // onPress={this.props.navigation.navigate('calendar')}
+              style={styles._forButton}>
+              <Icon
+                name='calendar'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Calender
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              // onPress={this.props.navigation.navigate('hamroradio')}
+              style={styles._forButton}>
+              <Icon
+                name='radio'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Radio
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='musical-notes'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Audio
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='videocam'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Videos
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='globe'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Language
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='today'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Kundali
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='moon'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Horoscope
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='analytics'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Forex
+            </Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles._forButton}>
+              <Icon
+                name='square'
+                size={28}
+                color="#616C6F"
+              />
+              <Text style={styles._fortext}>
+                Gold/Silver.
+            </Text>
+            </TouchableOpacity>
+          </View>
+        </ScrollView>
